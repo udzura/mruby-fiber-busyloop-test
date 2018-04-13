@@ -1,0 +1,6 @@
+name: mruby-fiber-busyloop-test
+description: BusyloopTest class
+author: Uchio Kondo
+website: https://github.com/udzura/mruby-fiber-busyloop-test
+protocol: git
+repository: https://github.com/udzura/mruby-fiber-busyloop-test.git
