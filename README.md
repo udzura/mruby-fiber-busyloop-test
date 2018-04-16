@@ -1,26 +1,12 @@
 # mruby-fiber-busyloop-test   [![Build Status](https://travis-ci.org/udzura/mruby-fiber-busyloop-test.svg?branch=master)](https://travis-ci.org/udzura/mruby-fiber-busyloop-test)
+
 BusyloopTest class
-## install by mrbgems
-- add conf.gem line to `build_config.rb`
 
-```ruby
-MRuby::Build.new do |conf|
+## NOTE
 
-    # ... (snip) ...
+This problem was related with https://github.com/mruby/mruby/issues/3998
 
-    conf.gem :github => 'udzura/mruby-fiber-busyloop-test'
-end
-```
-## example
-```ruby
-p BusyloopTest.hi
-#=> "hi!!"
-t = BusyloopTest.new "hello"
-p t.hello
-#=> "hello"
-p t.bye
-#=> "hello bye"
-```
+And fixed in https://github.com/mruby/mruby/commit/fabc460880fbabd18369a7ef8715538c83ebffc9 and commits around this.
 
 ## License
 under the MIT License:
